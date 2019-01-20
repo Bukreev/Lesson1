@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
     <com.example.bukreevei.lesson1.views.square.SquareImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
         android:src="@drawable/rectangle" />
 
 </android.support.constraint.ConstraintLayout>

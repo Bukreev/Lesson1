@@ -37,7 +37,9 @@ public class SquareImageView extends AppCompatImageView {
         final int measuredHeight = getSize(desiredHeight, heightMeasureSpec);
         final int measuredWidth = getSize(desiredWidth, widthMeasureSpec);
 
-        setMeasuredDimension(measuredWidth, measuredHeight);
+        final int size = Math.min(measuredHeight, measuredWidth);
+
+        setMeasuredDimension(size, size);
     }
 
     private int getSize(final int desiredSize, final int measureSpec) {
